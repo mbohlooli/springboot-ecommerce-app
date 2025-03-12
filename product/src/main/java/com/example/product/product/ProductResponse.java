@@ -1,8 +1,6 @@
 package com.example.product.product;
 
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Positive;
-
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 public record ProductResponse(
@@ -14,4 +12,4 @@ public record ProductResponse(
     Integer categoryId,
     String categoryName,
     String categoryDescription
-) { }
+) implements Serializable { }
